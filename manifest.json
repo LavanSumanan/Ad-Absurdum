@@ -5,7 +5,7 @@
     "version": "0.1",
     "background": {
       "scripts": ["background.js"],
-      "persistent": false
+      "persistent": true
     },
     "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
     "content_scripts": [
@@ -19,7 +19,7 @@
     "browser_action": {
       "default_popup": "index.html",
       "default_title": "Ad Absurdum",
-      "default_icon": "./icons/ad_absurdum_squarelogo.png"},
+      "default_icon": "./icons/thick_icon.png"},
       "commands": {
         "_execute_browser_action": {
           "suggested_key": {
@@ -33,8 +33,5 @@
         "webRequest",
         "webRequestBlocking",
         "<all_urls>"
-      ],
-      "web_accessible_resources": [
-        "images/my-image.png"
       ]
   }
