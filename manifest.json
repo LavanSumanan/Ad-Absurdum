@@ -28,5 +28,13 @@
           },
           "description": "Opens hello.html"
         }
-      }
+      },
+      "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+      ],
+      "web_accessible_resources": [
+        "images/my-image.png"
+      ]
   }
