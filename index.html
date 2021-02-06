@@ -13,11 +13,16 @@ body {
 </head>
 
 <div class="header">
-  <h1>Ad Absurdum</h1>
-  <p>best ad blocker <o/</p>
+  <img src="./icons./ad_absurdum_icon.PNG" alt="Ad Absurdum">
+  <p>best ad blocker</p>
 </div>
 
 <style>
+html, body {
+  width:200px;
+  height:400px;
+}
+
 .header {
   padding: 20px; /* some padding */
   text-align: left; /* center the text */
@@ -31,26 +36,11 @@ body {
 }
 </style>
 
-<script>
-    var count = 1;
-    function colourChange(btn, color) {
-        var property = document.getElementById(btn);
-        if (count == 0) {
-            property.style.backgroundColor = "#FFFFFF"
-            count = 1;        
-        }
-        else {
-            property.style.backgroundColor = "#7FFF00"
-            count = 0;
-        }
-    }
-</script>
-
 <div class="navbar">
-  <button id="catsButton" onclick="colourChange(catsButton)"><img src="./icons/kitties_textbutton.PNG" width="220" height="auto"></button>
-  <button id="pupperButton" onclick="colourChange(pupperButton)"><img src="./icons/pupper_textbutton.PNG" width="220" height="auto"></button>
-  <button id="inspirationButton" onclick="colourChange(inspirationButton)"><img src="./icons/inspiration_textbutton.PNG" width="220" height="auto"></button>
-  <button id="imaginesButton" onclick="colourChange(maginesButton)"><img src="./icons/imagines_textbutton.PNG" width="220" height="auto"></button>
+  <button id="catsButton" onclick="colourChange(catsButton)"><img src="./icons/kitties_textbutton.PNG" width="110" height="auto"></button>
+  <button id="pupperButton" onclick="colourChange(pupperButton)"><img src="./icons/pupper_textbutton.PNG" width="110" height="auto"></button>
+  <button id="inspirationButton" onclick="colourChange(inspirationButton)"><img src="./icons/inspiration_textbutton.PNG" width="110" height="auto"></button>
+  <button id="imaginesButton" onclick="colourChange(maginesButton)"><img src="./icons/imagines_textbutton.PNG" width="110" height="auto"></button>
 </div>
 
 <style>
@@ -59,8 +49,8 @@ body {
 .navbar button {
   overflow: hidden; /* Hide overflow */
   background-color: #FD6BB6; /* light pink background color */
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 /* Style the navigation bar links */

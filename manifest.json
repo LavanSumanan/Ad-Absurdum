@@ -3,6 +3,11 @@
     "name": "Ad Absurdum",
     "description":"Block ads with better ads! Sorta...",
     "version": "0.1",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
     "content_scripts": [
       {
         "matches": [
@@ -13,6 +18,15 @@
     ],
     "browser_action": {
       "default_popup": "index.html",
-      "default_title": "Open the popup",
-      "default_icon": "./icons/ad_absurdum_logo_icon.PNG" }
+      "default_title": "Ad Absurdum",
+      "default_icon": "./icons/ad_absurdum_logo_icon.PNG"},
+      "commands": {
+        "_execute_browser_action": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+A",
+            "mac": "MacCtrl+Shift+A"
+          },
+          "description": "Opens hello.html"
+        }
+      }
   }
