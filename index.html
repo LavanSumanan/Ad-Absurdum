@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-<title>Ad Absurdum</title>
+<title>Page Title</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,23 +19,21 @@ body {
 
 <style>
 html, body {
-  width:200px;
+  width:210px;
   height:400px;
 }
 
-.header {
-  text-align: left; /* center the text */
-  background: #EF0888; /* dark pink text color */
-  color: #D9EB4B; /* yellow background */
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
 }
-
 </style>
 
 <div class="navbar">
-  <button id="catsButton" onclick="colourChange(catsButton)"><img src="./icons/kitties_textbutton.PNG" width="110" height="auto" alt="kitties"></button>
-  <button id="pupperButton" onclick="colourChange(pupperButton)"><img src="./icons/pupper_textbutton.PNG" width="110" height="auto" alt="pupper"></button>
-  <button id="inspirationButton" onclick="colourChange(inspirationButton)"><img src="./icons/inspiration_textbutton.PNG" width="110" height="auto" alt = "inspiration"></button>
-  <button id="imaginesButton" onclick="colourChange(imaginesButton)"><img src="./icons/imagines_textbutton.PNG" width="110" height="auto" alt = "imagines"></button>
+  <button class="theme"><img src="./icons/kitties_textbutton.PNG" width="110" height="auto"></button>
+  <button class="theme"><img src="./icons/pupper_textbutton.PNG" width="110" height="auto"></button>
+  <button class="theme"><img src="./icons/inspiration_textbutton.PNG" width="110" height="auto"></button>
+  <button class="theme"><img src="./icons/imagines_textbutton.PNG" width="110" height="auto"></button>
 </div>
 
 <style>
@@ -57,10 +55,27 @@ html, body {
   text-decoration: none; /* Remove underline */
 }
 
-/* Change color on hover/mouse-over */
-.navbar button:hover {
-  background-color: #00A9FE; /* blue background color */
-  color: #D9EB4B; /* yellow text color */
-}
-
 </style>
+
+<script>
+
+var elems = document.getElementsByClassName("theme");
+for (var i = 0; i < elems.length; i++) {
+  elems[i].onclick = function() {
+    var color = window.getComputedStyle(this, null)
+                .getPropertyValue("background-color");
+    if (color === "rgb(253, 107, 182)") {
+      for (var i = 0; i < elems.length; i++) {
+        elems[i].style.backgroundColor = "rgb(253, 107, 182)";
+      }
+      this.style.backgroundColor = "rgb(0, 169, 254)";
+    }
+    else {
+      this.style.backgroundColor = "rgb(253, 107, 182)";
+    }
+    // this.style.backgroundColor = color === "rgb(253, 107, 182)" 
+                                 // ? "rgb(0, 169, 254)" : "rgb(253, 107, 182)";
+  };
+};
+
+</script>
