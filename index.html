@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+
+<div class="header">
+  <h1>Ad Absurdum</h1>
+  <p>best ad blocker <o/</p>
+</div>
+
+<style>
+.header {
+  padding: 20px; /* some padding */
+  text-align: left; /* center the text */
+  background: #EF0888; /* yellow background */
+  color: #D9EB4B; /* dark pink text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+</style>
+
+<script>
+    var count = 1;
+    function colourChange(btn, color) {
+        var property = document.getElementById(btn);
+        if (count == 0) {
+            property.style.backgroundColor = "#FFFFFF"
+            count = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#7FFF00"
+            count = 0;
+        }
+    }
+</script>
+
+<div class="navbar">
+  <button id="catsButton" onclick="colourChange("catsButton")"><img src="./icons/kitties_textbutton.PNG" width="220" height="auto"></button>
+  <button id="pupperButton" onclick="colourChange("pupperButton")"><img src="./icons/pupper_textbutton.PNG" width="220" height="auto"></button>
+  <button id="imaginesButton" onclick="colourChange("imaginesButton")"><img src="./icons/imagines_textbutton.PNG" width="220" height="auto"></button>
+  <button id="inspirationButton" onclick="colourChange("inspirationButton")"><img src="./icons/inspiration_textbutton.PNG" width="220" height="auto"></button>
+</div>
+
+<style>
+
+/* Style the top navigation bar */
+.navbar button {
+  overflow: hidden; /* Hide overflow */
+  background-color: #FD6BB6; /* light pink background color */
+  width: 200px;
+  height: 200px;
+}
+
+/* Style the navigation bar links */
+.navbar button {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: #D9EB4B; /* yellow text color */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Change color on hover/mouse-over */
+.navbar button:hover {
+  background-color: #00A9FE; /* blue background color */
+  color: #D9EB4B; /* yellow text color */
+}
+
+</style>
