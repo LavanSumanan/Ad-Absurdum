@@ -37,7 +37,7 @@ function pickImage(theme) {
     }
 }
 
-var currentTheme = "inpsiration";
+var currentTheme;
 
 // Fires when a server requests to display. Calls "pickImage(theme)" to find a URL for an image in the given theme "currentTheme" 
 chrome.webRequest.onBeforeRequest.addListener(
