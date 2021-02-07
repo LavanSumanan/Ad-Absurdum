@@ -4,7 +4,7 @@ Sick of pesky ads? Why not replace them with frisky memes! Ad Absurdum removes a
 
 While we could have just removed the ads and saved ourselves lots of time, where's the fun in that? Instead, we spent hours replacing ads with better ones! Impractical? Maybe. Fun? Absolutely!
 
-###To try it out for yourself...
+### To try it out for yourself...
 1) Download this repository as a `.zip` file.
 2) Open the `.zip` file to reveal a folder.
 3) Open google chrome and type in chrome://extensions.
