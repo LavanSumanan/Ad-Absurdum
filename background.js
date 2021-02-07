@@ -37,7 +37,7 @@ function pickImage(theme) {
     }
 }
 
-var currentTheme = "pupper";
+var currentTheme = "inpsiration";
 
 // Fires when a server requests to display. Calls "pickImage(theme)" to find a URL for an image in the given theme "currentTheme" 
 chrome.webRequest.onBeforeRequest.addListener(
@@ -65,20 +65,19 @@ for (var i = 0; i < elems.length; i++) {
             this.style.backgroundColor = "rgb(0, 169, 254)";
             // Set currentTheme to the chosen button's id
             currentTheme = this.id;
-            console.log(currentTheme);
         }
         else {
             //  Changes colour of button back to pink
             this.style.backgroundColor = "rgb(253, 107, 182)";
             // Set currentTheme to none
             currentTheme = "none";
-            console.log(currentTheme);
         }
 
         // Reloads current tab
-        browser.tabs.reload();
-    
-            
+        chrome.tabs.reload();
+
+        // Sends message to content.js to reload page
+        chrome.tabs.sendMessage({action: "reload"});
 
     };
 
