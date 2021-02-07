@@ -13,4 +13,5 @@ While we could have just removed the ads and saved ourselves lots of time, where
 6) Click the spinning arrow to refresh the extension, and then head to a chrome tab with ads on it.
 7) Finally, select *Ad Absurdum* in your chrome extensions and click on one of the four themes to replace your ads!
 
-## Note: Ad Absurdum must reload webpages to replace ads with memes. As well, Ad Absurdum does not replace every advertisement; it only replaces advertisements from known advertisement addresses.
+## Note:
+Ad Absurdum must reload webpages to replace ads with memes. As well, Ad Absurdum does not replace every advertisement; it only replaces advertisements from known advertisement addresses.
