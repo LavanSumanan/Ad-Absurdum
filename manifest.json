@@ -4,7 +4,7 @@
     "description":"Block ads with better ads! Sorta...",
     "version": "0.1",
     "background": {
-      "scripts": ["background.js"],
+      "scripts": ["background.js", "popup.js"],
       "persistent": true
     },
     "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
@@ -17,7 +17,7 @@
       }
     ],
     "browser_action": {
-      "default_popup": "index.html",
+      "default_popup": "popup.html",
       "default_title": "Ad Absurdum",
       "default_icon": "./icons/thick_icon.png"},
       "commands": {

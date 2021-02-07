@@ -1,0 +1,22 @@
+/* Set dimensions of extension */
+html, body {
+    width:210px;
+    height:400px;
+  }
+
+/* Style the top navigation bar */
+.navbar button {
+    overflow: hidden;
+    background-color: #FD6BB6;
+    width: 100px;
+    height: 100px;
+}
+  
+/* Style the navigation bar links */
+.navbar button {
+  float: left;
+  display: block;
+  color: #D9EB4B;
+  text-align: center;
+  text-decoration: none;
+}
