@@ -2,7 +2,6 @@
 chrome.runtime.onMessage.addListener(
     function (message) {
         if (message.action == "reload") {
-            alert("test");
             window.location.reload();
             return false;
         }
