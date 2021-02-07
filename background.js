@@ -1,16 +1,16 @@
 /*
 Puppers
-"https://i.ibb.co/nqGQTRx/p1.png"
-"https://i.ibb.co/1frMpg8/p2.png"
-"https://i.ibb.co/M6Tznbv/p3.png"
+"https://i.ibb.co/L8fMRN9/p1.png"
+"https://i.ibb.co/MhK1sG0/p2.png"
+"https://i.ibb.co/WnzJPKJ/p3.png"
 Kitties
-"https://i.ibb.co/4RL5ymT/k1.png"
-"https://i.ibb.co/ZN12YVy/k2.png"
-"https://i.ibb.co/xSN8zsf/k3.png"
+"https://i.ibb.co/P1h1NJX/k1.png",
+"https://i.ibb.co/4FyQDr5/k2.png",
+"https://i.ibb.co/tLYRJN1/k3.png"
 Inspiration
-"https://i.ibb.co/wgbbMms/in1.png"
-"https://i.ibb.co/VTqVq36/in2.png"
-"https://i.ibb.co/VLntjfr/in3.png"
+"https://i.ibb.co/Q6k9kVP/in1.png",
+"https://i.ibb.co/6FgHx4X/in2.png",
+"https://i.ibb.co/jMN2MXm/in3.png"
 Imagines
 "https://i.ibb.co/K5gFpXs/im1.png"
 "https://i.ibb.co/xJNYBMd/im2.png"
@@ -18,9 +18,9 @@ Imagines
 */
 
 // Arrays of images per theme
-var pupperArray = ["https://i.ibb.co/nqGQTRx/p1.png", "https://i.ibb.co/1frMpg8/p2.png", "https://i.ibb.co/M6Tznbv/p3.png"];
-var kittiesArray = ["https://i.ibb.co/4RL5ymT/k1.png", "https://i.ibb.co/ZN12YVy/k2.png", "https://i.ibb.co/xSN8zsf/k3.png"];
-var inspirationArray = ["https://i.ibb.co/wgbbMms/in1.png", "https://i.ibb.co/VTqVq36/in2.png", "https://i.ibb.co/VLntjfr/in3.png"];
+var pupperArray = ["https://i.ibb.co/L8fMRN9/p1.png", "https://i.ibb.co/MhK1sG0/p2.png", "https://i.ibb.co/WnzJPKJ/p3.png"];
+var kittiesArray = ["https://i.ibb.co/P1h1NJX/k1.png", "https://i.ibb.co/4FyQDr5/k2.png","https://i.ibb.co/tLYRJN1/k3.png"];
+var inspirationArray = ["https://i.ibb.co/Q6k9kVP/in1.png", "https://i.ibb.co/6FgHx4X/in2.png", "https://i.ibb.co/jMN2MXm/in3.png"];
 var imaginesarray = ["https://i.ibb.co/K5gFpXs/im1.png", "https://i.ibb.co/xJNYBMd/im2.png", "https://i.ibb.co/pwr9Ks6/im3.png"];
 
 // function to pick a random image from a theme (given a theme)
