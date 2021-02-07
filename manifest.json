@@ -7,7 +7,6 @@
       "scripts": ["background.js", "popup.js"],
       "persistent": true
     },
-    "content_security_policy": "script-src 'self' https://example.com; object-src 'self'",
     "content_scripts": [
       {
         "matches": [
@@ -25,8 +24,7 @@
           "suggested_key": {
             "default": "Ctrl+Shift+A",
             "mac": "MacCtrl+Shift+A"
-          },
-          "description": "Opens hello.html"
+          }
         }
       },
       "permissions": [
