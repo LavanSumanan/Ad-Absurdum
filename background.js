@@ -95,7 +95,6 @@ for (var i = 0; i < elems.length; i++) {
             this.style.backgroundColor = "rgb(0, 169, 254)";
             // Set currentTheme to the chosen button's id
             currentTheme = this.id+"";
-            alert(currentTheme);
         }
         else {
             //  Changes colour of button back to pink
